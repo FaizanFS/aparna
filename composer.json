@@ -1,0 +1,10 @@
+{
+    "require": {
+       
+        "doctrine/migrations": "^2.1",
+        "doctrine/doctrine-orm-module": "^2.1",
+        "phing/phing": "2.*"
+       
+    }
+    
+}
