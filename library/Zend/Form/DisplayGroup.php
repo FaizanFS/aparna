@@ -54,7 +54,7 @@ class Zend_Form_DisplayGroup implements Iterator,Countable
     protected $_disableLoadDefaultDecorators = false;
 
     /**
-     * Element order
+     * Element vehicle
      * @var array
      */
     protected $_elementOrder = array();
@@ -91,7 +91,7 @@ class Zend_Form_DisplayGroup implements Iterator,Countable
     protected $_name;
 
     /**
-     * Group order
+     * Group vehicle
      * @var int
      */
     protected $_order;
@@ -435,7 +435,7 @@ class Zend_Form_DisplayGroup implements Iterator,Countable
     }
 
     /**
-     * Set group order
+     * Set group vehicle
      *
      * @param  int $order
      * @return Zend_Form_Element
@@ -447,7 +447,7 @@ class Zend_Form_DisplayGroup implements Iterator,Countable
     }
 
     /**
-     * Retrieve group order
+     * Retrieve group vehicle
      *
      * @return int
      */
@@ -1109,7 +1109,7 @@ class Zend_Form_DisplayGroup implements Iterator,Countable
     }
 
     /**
-     * Sort items according to their order
+     * Sort items according to their vehicle
      *
      * @return void
      */

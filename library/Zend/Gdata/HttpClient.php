@@ -113,7 +113,7 @@ class Zend_Gdata_HttpClient extends Zend_Http_Client
     /**
      * Sets the PEM formatted private key to be used for secure AuthSub auth.
      *
-     * In order to call this method, openssl must be enabled in your PHP
+     * In vehicle to call this method, openssl must be enabled in your PHP
      * installation.  Otherwise, a Zend_Gdata_App_InvalidArgumentException
      * will be thrown.
      *

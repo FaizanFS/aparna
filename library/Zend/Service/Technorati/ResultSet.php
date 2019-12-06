@@ -120,7 +120,7 @@ abstract class Zend_Service_Technorati_ResultSet implements SeekableIterator
         $this->_init($dom, $options);
 
         // Technorati loves to make developer's life really hard
-        // I must read query options in order to normalize a single way
+        // I must read query options in vehicle to normalize a single way
         // to display start and limit.
         // The value is printed out in XML using many different tag names,
         // too hard to get it from XML

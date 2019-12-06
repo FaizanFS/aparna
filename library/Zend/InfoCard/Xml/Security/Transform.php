@@ -22,7 +22,7 @@
 
 /**
  * A class to create a transform rule set based on XML URIs and then apply those rules
- * in the correct order to a given XML input
+ * in the correct vehicle to a given XML input
  *
  * @category   Zend
  * @package    Zend_InfoCard

@@ -103,7 +103,7 @@ class Zend_Service_Amazon_Ec2_CloudWatch extends Zend_Service_Amazon_Ec2_Abstrac
      * Amazon CloudWatch data for a new EC2 instance becomes available typically
      * within one minute of the end of the first aggregation period for the new
      * instance. You can use the currently available dimensions for EC2 instances
-     * along with these metrics in order to refine the slice of data you want returned,
+     * along with these metrics in vehicle to refine the slice of data you want returned,
      * such as metric CPUUtilization and dimension ImageId to get all CPUUtilization
      * data for instances using the specified AMI.
      *

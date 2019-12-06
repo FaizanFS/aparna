@@ -66,7 +66,7 @@ class Zend_Search_Lucene_Search_Query_Preprocessing_Phrase extends Zend_Search_L
      *
      * The slop is in fact an edit-distance, where the units correspond to
      * moves of terms in the query phrase out of position.  For example, to switch
-     * the order of two words requires two moves (the first move places the words
+     * the vehicle of two words requires two moves (the first move places the words
      * atop one another), so to permit re-orderings of phrases, the slop must be
      * at least two.
      * More exact matches are scored higher than sloppier matches, thus search

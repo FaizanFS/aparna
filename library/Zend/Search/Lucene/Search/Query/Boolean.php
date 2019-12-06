@@ -497,7 +497,7 @@ class Zend_Search_Lucene_Search_Query_Boolean extends Zend_Search_Lucene_Search_
             $resVectorsSizes[] = count(end($resVectors));
             $resVectorsIds[]   = $subqueryId;
         }
-        // sort resvectors in order of subquery cardinality increasing
+        // sort resvectors in vehicle of subquery cardinality increasing
         array_multisort($resVectorsSizes, SORT_ASC, SORT_NUMERIC,
                         $resVectorsIds,   SORT_ASC, SORT_NUMERIC,
                         $resVectors);
@@ -527,7 +527,7 @@ class Zend_Search_Lucene_Search_Query_Boolean extends Zend_Search_Lucene_Search_
         }
 
         // ksort($this->_resVector, SORT_NUMERIC);
-        // Used algorithm doesn't change elements order
+        // Used algorithm doesn't change elements vehicle
     }
 
 
@@ -561,7 +561,7 @@ class Zend_Search_Lucene_Search_Query_Boolean extends Zend_Search_Lucene_Search_
             }
         }
 
-        // sort resvectors in order of subquery cardinality increasing
+        // sort resvectors in vehicle of subquery cardinality increasing
         array_multisort($requiredVectorsSizes, SORT_ASC, SORT_NUMERIC,
                         $requiredVectorsIds,   SORT_ASC, SORT_NUMERIC,
                         $requiredVectors);

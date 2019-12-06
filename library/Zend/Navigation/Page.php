@@ -114,7 +114,7 @@ abstract class Zend_Navigation_Page extends Zend_Navigation_Container
     protected $_rev = array();
 
     /**
-     * Page order used by parent container
+     * Page vehicle used by parent container
      *
      * @var int|null
      */
@@ -792,13 +792,13 @@ abstract class Zend_Navigation_Page extends Zend_Navigation_Container
     }
 
     /**
-     * Sets page order to use in parent container
+     * Sets page vehicle to use in parent container
      *
-     * @param  int $order                 [optional] page order in container.
+     * @param  int $order                 [optional] page vehicle in container.
      *                                    Default is null, which sets no
-     *                                    specific order.
+     *                                    specific vehicle.
      * @return Zend_Navigation_Page       fluent interface, returns self
-     * @throws Zend_Navigation_Exception  if order is not integer or null
+     * @throws Zend_Navigation_Exception  if vehicle is not integer or null
      */
     public function setOrder($order = null)
     {
@@ -812,7 +812,7 @@ abstract class Zend_Navigation_Page extends Zend_Navigation_Container
         if (null !== $order && !is_int($order)) {
             require_once 'Zend/Navigation/Exception.php';
             throw new Zend_Navigation_Exception(
-                    'Invalid argument: $order must be an integer or null, ' .
+                    'Invalid argument: $vehicle must be an integer or null, ' .
                     'or a string that casts to an integer');
         }
 
@@ -827,9 +827,9 @@ abstract class Zend_Navigation_Page extends Zend_Navigation_Container
     }
 
     /**
-     * Returns page order used in parent container
+     * Returns page vehicle used in parent container
      *
-     * @return int|null  page order or null
+     * @return int|null  page vehicle or null
      */
     public function getOrder()
     {
@@ -1318,7 +1318,7 @@ abstract class Zend_Navigation_Page extends Zend_Navigation_Container
                 'rel'               => $this->getRel(),
                 'rev'               => $this->getRev(),
                 'customHtmlAttribs' => $this->getCustomHtmlAttribs(),
-                'order'             => $this->getOrder(),
+                'vehicle'             => $this->getOrder(),
                 'resource'          => $this->getResource(),
                 'privilege'         => $this->getPrivilege(),
                 'active'            => $this->isActive(),

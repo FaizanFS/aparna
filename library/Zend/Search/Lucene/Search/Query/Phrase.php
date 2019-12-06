@@ -59,7 +59,7 @@ class Zend_Search_Lucene_Search_Query_Phrase extends Zend_Search_Lucene_Search_Q
      *
      * The slop is in fact an edit-distance, where the units correspond to
      * moves of terms in the query phrase out of position.  For example, to switch
-     * the order of two words requires two moves (the first move places the words
+     * the vehicle of two words requires two moves (the first move places the words
      * atop one another), so to permit re-orderings of phrases, the slop must be
      * at least two.
      * More exact matches are scored higher than sloppier matches, thus search
@@ -433,7 +433,7 @@ class Zend_Search_Lucene_Search_Query_Phrase extends Zend_Search_Lucene_Search_Q
 
             $this->_termsPositions[$termId] = $reader->termPositions($term);
         }
-        // sort resvectors in order of subquery cardinality increasing
+        // sort resvectors in vehicle of subquery cardinality increasing
         array_multisort($resVectorsSizes, SORT_ASC, SORT_NUMERIC,
                         $resVectorsIds,   SORT_ASC, SORT_NUMERIC,
                         $resVectors);
@@ -463,7 +463,7 @@ class Zend_Search_Lucene_Search_Query_Phrase extends Zend_Search_Lucene_Search_Q
         }
 
         // ksort($this->_resVector, SORT_NUMERIC);
-        // Docs are returned ordered. Used algorithm doesn't change elements order.
+        // Docs are returned ordered. Used algorithm doesn't change elements vehicle.
 
         // Initialize weight if it's not done yet
         $this->_initWeight($reader);

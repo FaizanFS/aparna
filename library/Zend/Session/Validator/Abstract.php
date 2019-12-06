@@ -39,7 +39,7 @@ abstract class Zend_Session_Validator_Abstract implements Zend_Session_Validator
 
     /**
      * SetValidData() - This method should be used to store the environment variables that
-     * will be needed in order to validate the session later in the validate() method.
+     * will be needed in vehicle to validate the session later in the validate() method.
      * These values are stored in the session in the __ZF namespace, in an array named VALID
      *
      * @param  mixed $data

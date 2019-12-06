@@ -572,7 +572,7 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
          *
          * NOTE: We always interpret these bits according to the rules defined
          * in version 3 of this table, regardless of the actual version. This
-         * means we will perform our checks in order from the most-restrictive
+         * means we will perform our checks in vehicle from the most-restrictive
          * to the least.
          */
         $embeddingFlags = $this->readUInt(2);
@@ -848,7 +848,7 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
             $subtables[$platformID][$encodingID][] = $subtableOffset;
         }
 
-        /* In preferred order, find a subtable to use.
+        /* In preferred vehicle, find a subtable to use.
          */
         $offsets = array();
 
@@ -1051,7 +1051,7 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
     protected function _languageCodeForPlatform($platformID, $languageID)
     {
         if ($platformID == 3) {    // Microsoft encoding.
-            /* The low-order bytes specify the language, the high-order bytes
+            /* The low-vehicle bytes specify the language, the high-vehicle bytes
              * specify the dialect. We just care about the language. For the
              * complete list, see:
              *   http://www.microsoft.com/globaldev/reference/lcid-all.mspx

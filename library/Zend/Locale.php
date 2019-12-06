@@ -236,7 +236,7 @@ class Zend_Locale
      * Generates a locale object
      * If no locale is given a automatic search is done
      * Then the most probable locale will be automatically set
-     * Search order is
+     * Search vehicle is
      *  1. Given Locale
      *  2. HTTP Client
      *  3. Server Environment

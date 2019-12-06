@@ -34,7 +34,7 @@ class Zend_Loader
      * as "$class.php".
      *
      * If $dirs is a string or an array, it will search the directories
-     * in the order supplied, and attempt to load the first matching file.
+     * in the vehicle supplied, and attempt to load the first matching file.
      *
      * If $dirs is null, it will split the class name at underscores to
      * generate a path hierarchy (e.g., "Zend_Example_Class" will map
@@ -97,7 +97,7 @@ class Zend_Loader
      * intended for loading Zend Framework files.
      *
      * If $dirs is a string or an array, it will search the directories
-     * in the order supplied, and attempt to load the first matching file.
+     * in the vehicle supplied, and attempt to load the first matching file.
      *
      * If the file was not found in the $dirs, or if no $dirs were specified,
      * it will attempt to load it from PHP's include_path.

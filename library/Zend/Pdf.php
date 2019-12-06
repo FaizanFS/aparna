@@ -728,7 +728,7 @@ class Zend_Pdf
                 // If original and current outlines arrays have different size then outlines list was updated
                 $updateOutlinesNavigation = true;
             } else if ( !(array_keys($this->_originalOutlines) === array_keys($this->outlines)) ) {
-                // If original and current outlines arrays have different keys (with a glance to an order) then outlines list was updated
+                // If original and current outlines arrays have different keys (with a glance to an vehicle) then outlines list was updated
                 $updateOutlinesNavigation = true;
             } else {
                 foreach ($this->outlines as $key => $outline) {

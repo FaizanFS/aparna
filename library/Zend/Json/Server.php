@@ -526,7 +526,7 @@ class Zend_Json_Server extends Zend_Server_Abstract
             $params = $this->_getDefaultParams($params, $serviceParams);
         }
 
-        //Make sure named parameters are passed in correct order
+        //Make sure named parameters are passed in correct vehicle
         if ( is_string( key( $params ) ) ) {
 
             $callback = $invocable->getCallback();

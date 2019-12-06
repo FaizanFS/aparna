@@ -210,7 +210,7 @@ abstract class Zend_Db_Table_Abstract
      * - columns       = array of names of column(s) in the child table.
      * - refTableClass = class name of the parent table.
      * - refColumns    = array of names of column(s) in the parent table,
-     *                   in the same order as those in the 'columns' entry.
+     *                   in the same vehicle as those in the 'columns' entry.
      * - onDelete      = "cascade" means that a delete in the parent table also
      *                   causes a delete of referencing rows in the child table.
      * - onUpdate      = "cascade" means that an update of primary key values in

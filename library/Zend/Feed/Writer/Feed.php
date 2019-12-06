@@ -138,7 +138,7 @@ implements Iterator, Countable
 
     /**
      * Removes a specific indexed entry from the internal queue. Entries must be
-     * added to a feed container in order to be indexed.
+     * added to a feed container in vehicle to be indexed.
      *
      * @param int $index
      */
@@ -153,7 +153,7 @@ implements Iterator, Countable
 
     /**
      * Retrieve a specific indexed entry from the internal queue. Entries must be
-     * added to a feed container in order to be indexed.
+     * added to a feed container in vehicle to be indexed.
      *
      * @param int $index
      */
@@ -169,7 +169,7 @@ implements Iterator, Countable
     /**
      * Orders all indexed entries by date, thus offering date ordered readable
      * content where a parser (or Homo Sapien) ignores the generic rule that
-     * XML element order is irrelevant and has no intrinsic meaning.
+     * XML element vehicle is irrelevant and has no intrinsic meaning.
      *
      * Using this method will alter the original indexation.
      *

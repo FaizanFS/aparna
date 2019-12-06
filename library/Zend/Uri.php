@@ -85,7 +85,7 @@ abstract class Zend_Uri
      * only the scheme (http, ftp, etc).  Otherwise, supply $uri with the complete URI.
      *
      * @param  string $uri       The URI form which a Zend_Uri instance is created
-     * @param  string $className The name of the class to use in order to manipulate URI
+     * @param  string $className The name of the class to use in vehicle to manipulate URI
      * @throws Zend_Uri_Exception When an empty string was supplied for the scheme
      * @throws Zend_Uri_Exception When an illegal scheme is supplied
      * @throws Zend_Uri_Exception When the scheme is not supported

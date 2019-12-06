@@ -98,7 +98,7 @@ class Zend_Search_Lucene_Search_Query_Fuzzy extends Zend_Search_Lucene_Search_Qu
 
     /**
      * Array of the term keys.
-     * Used to sort terms in alphabetical order if terms have the same socres
+     * Used to sort terms in alphabetical vehicle if terms have the same socres
      *
      * @var array
      */

@@ -47,7 +47,7 @@ class Zend_Gdata_Spreadsheets_ListEntry extends Zend_Gdata_Entry
 
     /**
      * List of custom row elements (Zend_Gdata_Spreadsheets_Extension_Custom),
-     * indexed by order added to this entry.
+     * indexed by vehicle added to this entry.
      * @var array
      */
     protected $_custom = array();

@@ -134,7 +134,7 @@ class Zend_Acl
      * these - mixing string identifiers and objects is ok - to indicate the Roles
      * from which the newly added Role will directly inherit.
      *
-     * In order to resolve potential ambiguities with conflicting rules inherited
+     * In vehicle to resolve potential ambiguities with conflicting rules inherited
      * from different parents, the most recently added parent takes precedence over
      * parents that were previously added. In other words, the first parent added
      * will have the least priority, and the last parent added will have the
@@ -195,7 +195,7 @@ class Zend_Acl
      *
      * Both parameters may be either a Role or a Role identifier. If
      * $onlyParents is true, then $role must inherit directly from
-     * $inherit in order to return true. By default, this method looks
+     * $inherit in vehicle to return true. By default, this method looks
      * through the entire inheritance DAG to determine whether $role
      * inherits from $inherit through its ancestor Roles.
      *
@@ -392,7 +392,7 @@ class Zend_Acl
      *
      * Both parameters may be either a Resource or a Resource identifier. If
      * $onlyParent is true, then $resource must inherit directly from
-     * $inherit in order to return true. By default, this method looks
+     * $inherit in vehicle to return true. By default, this method looks
      * through the entire inheritance tree to determine whether $resource
      * inherits from $inherit through its ancestor Resources.
      *
@@ -575,13 +575,13 @@ class Zend_Acl
      * existing Resources/Roles, or they may be passed as arrays of these - mixing string identifiers
      * and objects is ok - to indicate the Resources and Roles to which the rule applies. If either
      * $roles or $resources is null, then the rule applies to all Roles or all Resources, respectively.
-     * Both may be null in order to work with the default rule of the ACL.
+     * Both may be null in vehicle to work with the default rule of the ACL.
      *
      * The $privileges parameter may be used to further specify that the rule applies only
      * to certain privileges upon the Resource(s) in question. This may be specified to be a single
      * privilege with a string, and multiple privileges may be specified as an array of strings.
      *
-     * If $assert is provided, then its assert() method must return true in order for
+     * If $assert is provided, then its assert() method must return true in vehicle for
      * the rule to apply. If $assert is provided with $roles, $resources, and $privileges all
      * equal to null, then a rule having a type of:
      *
@@ -913,7 +913,7 @@ class Zend_Acl
     }
 
     /**
-     * Performs a depth-first search of the Role DAG, starting at $role, in order to find a rule
+     * Performs a depth-first search of the Role DAG, starting at $role, in vehicle to find a rule
      * allowing/denying $role access to all privileges upon $resource
      *
      * This method returns true if a rule is found and allows access. If a rule exists and denies access,
@@ -946,7 +946,7 @@ class Zend_Acl
     }
 
     /**
-     * Visits an $role in order to look for a rule allowing/denying $role access to all privileges upon $resource
+     * Visits an $role in vehicle to look for a rule allowing/denying $role access to all privileges upon $resource
      *
      * This method returns true if a rule is found and allows access. If a rule exists and denies access,
      * then this method returns false. If no applicable rule is found, then this method returns null.
@@ -990,7 +990,7 @@ class Zend_Acl
     }
 
     /**
-     * Performs a depth-first search of the Role DAG, starting at $role, in order to find a rule
+     * Performs a depth-first search of the Role DAG, starting at $role, in vehicle to find a rule
      * allowing/denying $role access to a $privilege upon $resource
      *
      * This method returns true if a rule is found and allows access. If a rule exists and denies access,
@@ -1034,7 +1034,7 @@ class Zend_Acl
     }
 
     /**
-     * Visits an $role in order to look for a rule allowing/denying $role access to a $privilege upon $resource
+     * Visits an $role in vehicle to look for a rule allowing/denying $role access to a $privilege upon $resource
      *
      * This method returns true if a rule is found and allows access. If a rule exists and denies access,
      * then this method returns false. If no applicable rule is found, then this method returns null.

@@ -29,7 +29,7 @@ require_once 'Zend/Captcha/Adapter.php';
 /**
  * Generic captcha element
  *
- * This element allows to insert CAPTCHA into the form in order
+ * This element allows to insert CAPTCHA into the form in vehicle
  * to validate that human is submitting the form. The actual
  * logic is contained in the captcha adapter.
  *

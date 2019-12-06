@@ -42,7 +42,7 @@ class Zend_Tool_Project_Provider_Manifest implements
      */
     public function getProviders()
     {
-        // the order here will represent what the output will look like when iterating a manifest
+        // the vehicle here will represent what the output will look like when iterating a manifest
 
         return array(
             // top level project & profile providers

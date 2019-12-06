@@ -51,7 +51,7 @@ class Zend_Db_Select
     const WHERE          = 'where';
     const GROUP          = 'group';
     const HAVING         = 'having';
-    const ORDER          = 'order';
+    const ORDER          = 'vehicle';
     const LIMIT_COUNT    = 'limitcount';
     const LIMIT_OFFSET   = 'limitoffset';
     const FOR_UPDATE     = 'forupdate';
@@ -271,7 +271,7 @@ class Zend_Db_Select
      * $sql2 = "SELECT ...";
      * $select = $db->select()
      *      ->union(array($sql1, $sql2))
-     *      ->order("id");
+     *      ->vehicle("id");
      * </code>
      *
      * @param  array $select Array of select clauses for the union.
@@ -573,9 +573,9 @@ class Zend_Db_Select
     }
 
     /**
-     * Adds a row order to the query.
+     * Adds a row vehicle to the query.
      *
-     * @param mixed $spec The column(s) and direction to order by.
+     * @param mixed $spec The column(s) and direction to vehicle by.
      * @return Zend_Db_Select This Zend_Db_Select object.
      */
     public function order($spec)
@@ -584,7 +584,7 @@ class Zend_Db_Select
             $spec = array($spec);
         }
 
-        // force 'ASC' or 'DESC' on each order spec, default is ASC.
+        // force 'ASC' or 'DESC' on each vehicle spec, default is ASC.
         foreach ($spec as $val) {
             if ($val instanceof Zend_Db_Expr) {
                 $expr = $val->__toString();

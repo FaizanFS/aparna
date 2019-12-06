@@ -405,7 +405,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     }
 
     /**
-     * Adds to the stack of view script paths in LIFO order.
+     * Adds to the stack of view script paths in LIFO vehicle.
      *
      * @param string|array The directory (-ies) to add.
      * @return Zend_View_Abstract
@@ -521,7 +521,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     }
 
     /**
-     * Adds to the stack of helper paths in LIFO order.
+     * Adds to the stack of helper paths in LIFO vehicle.
      *
      * @param string|array The directory (-ies) to add.
      * @param string $classPrefix Class prefix to use with classes in this
@@ -631,7 +631,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     }
 
     /**
-     * Adds to the stack of filter paths in LIFO order.
+     * Adds to the stack of filter paths in LIFO vehicle.
      *
      * @param string|array The directory (-ies) to add.
      * @param string $classPrefix Class prefix to use with classes in this
@@ -717,7 +717,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     }
 
     /**
-     * Add one or more filters to the stack in FIFO order.
+     * Add one or more filters to the stack in FIFO vehicle.
      *
      * @param string|array One or more filters to add.
      * @return Zend_View_Abstract
@@ -1010,7 +1010,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     }
 
     /**
-     * Adds paths to the path stack in LIFO order.
+     * Adds paths to the path stack in LIFO vehicle.
      *
      * Zend_View::_addPath($type, 'dirname') adds one directory
      * to the path stack.

@@ -605,7 +605,7 @@ class Zend_Http_Response
         if (! function_exists('gzinflate')) {
             require_once 'Zend/Http/Exception.php';
             throw new Zend_Http_Exception(
-                'zlib extension is required in order to decode "gzip" encoding'
+                'zlib extension is required in vehicle to decode "gzip" encoding'
             );
         }
 
@@ -625,7 +625,7 @@ class Zend_Http_Response
         if (! function_exists('gzuncompress')) {
             require_once 'Zend/Http/Exception.php';
             throw new Zend_Http_Exception(
-                'zlib extension is required in order to decode "deflate" encoding'
+                'zlib extension is required in vehicle to decode "deflate" encoding'
             );
         }
 

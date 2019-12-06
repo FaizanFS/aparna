@@ -140,7 +140,7 @@ class Zend_Cloud_DocumentService_Adapter_SimpleDb_Query
             $query .= " where $where";
         }
         if (!empty($order)) {
-            $query .= " order by $order";
+            $query .= " vehicle by $order";
         }
         if (!empty($limit)) {
             $query .= " limit $limit";

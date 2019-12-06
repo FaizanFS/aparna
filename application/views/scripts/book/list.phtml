@@ -1,32 +1,38 @@
-<br /><br />
+<br/><br/>
 <div id="view-content" class="container">
-<a href="<?php echo $this->baseUrl(); ?>/book/add"><button class="btn btn-success float-right form-group">Add Book</button></a>
-<div class="table-responsive">
-  <table class="table">
-   <thead>
-   <tr>
-		<th>Book Name</th>
-		<th>Author Name</th>
-		<th>Release Year</th>
-    <th>Description</th>
-    <th>Action</th>
-   </tr>
-   </thead>
-   <tbody>
- <?php  foreach ($this->books as $value) { ?>
-	<tr>
-		<td><?=$value->bookname?></td>
-		<td><?=$value->author?></td>
-		<td><?=$value->year?></td>
-    <td><?=$value->description?></td>
-    <td>
-      <a href="<?php echo $this->baseUrl();?>/book/edit/id/<?php echo $value->id; ?>"><button class="btn btn-warning form-control col-sm-4">Edit</button></a>
-      <a href="<?php echo $this->baseUrl();?>/book/delete/id/<?php echo $value->id; ?>"><button class="btn btn-danger form-control col-sm-5">Remove</button></a>
-    </td>
-	</tr>
- <?php } ?>	
-   </tbody>
-  </table>
-</div>
-	
+    <a href="<?php echo $this->baseUrl(); ?>/book/add">
+        <button class="btn btn-success float-right form-group">Add Book</button>
+    </a>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Release Year</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($this->books as $value) { ?>
+                <tr>
+                    <td><?= $value->bookname ?></td>
+                    <td><?= $value->author ?></td>
+                    <td><?= $value->year ?></td>
+                    <td><?= $value->description ?></td>
+                    <td>
+                        <a href="<?php echo $this->baseUrl(); ?>/book/edit/id/<?php echo $value->id; ?>">
+                            <button class="btn btn-warning form-control col-sm-4">Edit</button>
+                        </a>
+                        <a href="<?php echo $this->baseUrl(); ?>/book/delete/id/<?php echo $value->id; ?>">
+                            <button class="btn btn-danger form-control col-sm-5">Remove</button>
+                        </a>
+                    </td>
+                </tr>
+            <?php } ?>
+            </tbody>
+        </table>
+    </div>
+
 </div>

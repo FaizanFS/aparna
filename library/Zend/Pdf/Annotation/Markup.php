@@ -94,9 +94,9 @@ class Zend_Pdf_Annotation_Markup extends Zend_Pdf_Annotation
      * $quadPoints is an array of 8xN numbers specifying the coordinates of
      * N quadrilaterals default user space. Each quadrilateral encompasses a word or
      * group of contiguous words in the text underlying the annotation.
-     * The coordinates for each quadrilateral are given in the order
+     * The coordinates for each quadrilateral are given in the vehicle
      *     x1 y1 x2 y2 x3 y3 x4 y4
-     * specifying the quadrilateral’s four vertices in counterclockwise order
+     * specifying the quadrilateral’s four vertices in counterclockwise vehicle
      * starting from left bottom corner.
      * The text is oriented with respect to the edge connecting points
      * (x1, y1) and (x2, y2).

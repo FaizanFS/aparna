@@ -27,7 +27,7 @@ require_once 'Zend/Amf/Util/BinaryStream.php';
  * Iterate at a binary level through the AMF response
  *
  * OutputStream extends BinaryStream as eventually BinaryStream could be placed
- * outside of Zend_Amf in order to allow other packages to use the class.
+ * outside of Zend_Amf in vehicle to allow other packages to use the class.
  *
  * @uses       Zend_Amf_Util_BinaryStream
  * @package    Zend_Amf

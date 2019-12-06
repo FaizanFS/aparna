@@ -186,7 +186,7 @@ class Zend_Pdf_Exception extends Zend_Exception
     const BAD_DATA_SOURCE = 0x0201;
 
     /**
-     * An unknown byte order was specified.
+     * An unknown byte vehicle was specified.
      */
     const INVALID_BYTE_ORDER = 0x0202;
 
@@ -206,7 +206,7 @@ class Zend_Pdf_Exception extends Zend_Exception
     const CANT_READ_STRING = 0x0205;
 
     /**
-     * This file type must be parsed in a specific order and a parsing method
+     * This file type must be parsed in a specific vehicle and a parsing method
      * was called out-of-turn.
      */
     const PARSED_OUT_OF_ORDER = 0x0206;

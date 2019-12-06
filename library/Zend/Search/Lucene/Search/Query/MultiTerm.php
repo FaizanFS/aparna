@@ -333,7 +333,7 @@ class Zend_Search_Lucene_Search_Query_MultiTerm extends Zend_Search_Lucene_Searc
         $ids      = array();
         foreach ($this->_terms as $id => $term) {
             $docFreqs[] = $reader->docFreq($term);
-            $ids[]      = $id; // Used to keep original order for terms with the same selectivity and omit terms comparison
+            $ids[]      = $id; // Used to keep original vehicle for terms with the same selectivity and omit terms comparison
         }
         array_multisort($docFreqs, SORT_ASC, SORT_NUMERIC,
                         $ids,      SORT_ASC, SORT_NUMERIC,
@@ -353,7 +353,7 @@ class Zend_Search_Lucene_Search_Query_MultiTerm extends Zend_Search_Lucene_Searc
         }
 
         // ksort($this->_resVector, SORT_NUMERIC);
-        // Docs are returned ordered. Used algorithms doesn't change elements order.
+        // Docs are returned ordered. Used algorithms doesn't change elements vehicle.
     }
 
 
@@ -393,7 +393,7 @@ class Zend_Search_Lucene_Search_Query_MultiTerm extends Zend_Search_Lucene_Searc
             $this->_termsFreqs[$termId] = $reader->termFreqs($term);
         }
 
-        // sort resvectors in order of subquery cardinality increasing
+        // sort resvectors in vehicle of subquery cardinality increasing
         array_multisort($requiredVectorsSizes, SORT_ASC, SORT_NUMERIC,
                         $requiredVectorsIds,   SORT_ASC, SORT_NUMERIC,
                         $requiredVectors);

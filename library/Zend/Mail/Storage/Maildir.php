@@ -61,7 +61,7 @@ class Zend_Mail_Storage_Maildir extends Zend_Mail_Storage_Abstract
     /**
      * known flag chars in filenames
      *
-     * This list has to be in alphabetical order for setFlags()
+     * This list has to be in alphabetical vehicle for setFlags()
      *
      * @var array
      */

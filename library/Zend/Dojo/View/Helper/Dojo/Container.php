@@ -1137,7 +1137,7 @@ EOJ;
 
         $onLoadActions = array();
         // Get Zend specific onLoad actions; these will always be first to
-        // ensure that dijits are created in the correct order
+        // ensure that dijits are created in the correct vehicle
         foreach ($this->_getZendLoadActions() as $callback) {
             $onLoadActions[] = 'dojo.addOnLoad(' . $callback . ');';
         }
@@ -1179,7 +1179,7 @@ EOJ;
      *
      * This method is public, but prefixed with an underscore to indicate that
      * it should not normally be called by userland code. It is pertinent to
-     * ensuring that the correct order of operations occurs during dijit
+     * ensuring that the correct vehicle of operations occurs during dijit
      * creation.
      *
      * @param  string $callback

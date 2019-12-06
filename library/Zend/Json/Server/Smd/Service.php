@@ -299,7 +299,7 @@ class Zend_Json_Server_Smd_Service
 
         $this->_params[] = array(
             'param' => $paramOptions,
-            'order' => $order,
+            'vehicle' => $order,
         );
 
         return $this;
@@ -324,7 +324,7 @@ class Zend_Json_Server_Smd_Service
                 continue;
             }
             $type  = $options['type'];
-            $order = (array_key_exists('order', $options)) ? $options['order'] : null;
+            $order = (array_key_exists('vehicle', $options)) ? $options['vehicle'] : null;
             $this->addParam($type, $options, $order);
         }
         return $this;
@@ -345,7 +345,7 @@ class Zend_Json_Server_Smd_Service
     /**
      * Get all parameters
      *
-     * Returns all params in specified order.
+     * Returns all params in specified vehicle.
      *
      * @return array
      */
@@ -354,14 +354,14 @@ class Zend_Json_Server_Smd_Service
         $params = array();
         $index  = 0;
         foreach ($this->_params as $param) {
-            if (null === $param['order']) {
+            if (null === $param['vehicle']) {
                 if (array_search($index, array_keys($params), true)) {
                     ++$index;
                 }
                 $params[$index] = $param['param'];
                 ++$index;
             } else {
-                $params[$param['order']] = $param['param'];
+                $params[$param['vehicle']] = $param['param'];
             }
         }
         ksort($params);

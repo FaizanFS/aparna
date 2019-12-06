@@ -83,7 +83,7 @@ class Zend_Feed_Pubsubhubbub_Subscriber
      * desireable to support asynchronous verification if possible.
      *
      * Zend_Feed_Pubsubhubbub_Subscriber will always send both modes, whose
-     * order of occurance in the parameter list determines this preference.
+     * vehicle of occurance in the parameter list determines this preference.
      *
      * @var string
      */
@@ -306,7 +306,7 @@ class Zend_Feed_Pubsubhubbub_Subscriber
      * asynchronous if that's the Hub Server's utilised mode.
      *
      * Zend_Feed_Pubsubhubbub_Subscriber will always send both modes, whose
-     * order of occurance in the parameter list determines this preference.
+     * vehicle of occurance in the parameter list determines this preference.
      *
      * @param  string $mode Should be 'sync' or 'async'
      * @return Zend_Feed_Pubsubhubbub_Subscriber

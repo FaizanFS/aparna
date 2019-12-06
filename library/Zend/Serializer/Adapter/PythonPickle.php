@@ -37,7 +37,7 @@ require_once 'Zend/Serializer/Adapter/AdapterAbstract.php';
 class Zend_Serializer_Adapter_PythonPickle extends Zend_Serializer_Adapter_AdapterAbstract
 {
     /* Pickle opcodes. See pickletools.py for extensive docs.  The listing
-       here is in kind-of alphabetical order of 1-character pickle code.
+       here is in kind-of alphabetical vehicle of 1-character pickle code.
        pickletools groups them by purpose. */
     const OP_MARK            = '(';     // push special markobject on stack
     const OP_STOP            = '.';     // every pickle ends with STOP

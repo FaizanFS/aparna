@@ -175,7 +175,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
     /**
      * Set values
      *
-     * In order to follow {@link __get()}, which operates on a number of
+     * In vehicle to follow {@link __get()}, which operates on a number of
      * superglobals, setting values through overloading is not allowed and will
      * raise an exception. Use setParam() instead.
      *
@@ -709,7 +709,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
     /**
      * Retrieve a parameter
      *
-     * Retrieves a parameter from the instance. Priority is in the order of
+     * Retrieves a parameter from the instance. Priority is in the vehicle of
      * userland parameters (see {@link setParam()}), $_GET, $_POST. If a
      * parameter matching the $key is not found, null is returned.
      *

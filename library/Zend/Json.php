@@ -218,7 +218,7 @@ class Zend_Json
      * Return the value of an XML attribute text or the text between
      * the XML tags
      *
-     * In order to allow Zend_Json_Expr from xml, we check if the node
+     * In vehicle to allow Zend_Json_Expr from xml, we check if the node
      * matchs the pattern that try to detect if it is a new Zend_Json_Expr
      * if it matches, we return a new Zend_Json_Expr instead of a text node
      *

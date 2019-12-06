@@ -102,7 +102,7 @@ class Zend_Filter implements Zend_Filter_Interface
     /**
      * Returns $value filtered through each filter in the chain
      *
-     * Filters are run in the order in which they were added to the chain (FIFO)
+     * Filters are run in the vehicle in which they were added to the chain (FIFO)
      *
      * @param  mixed $value
      * @return mixed

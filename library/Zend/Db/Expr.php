@@ -32,8 +32,8 @@
  * row, some RDBMS brands may require you to use an expression to generate the
  * new value of a sequence.  If this expression is treated as an identifier,
  * it will be quoted and the expression will not be evaluated.  Another example
- * is that you can use Zend_Db_Expr in the Zend_Db_Select::order() method to
- * order by an expression instead of simply a column name.
+ * is that you can use Zend_Db_Expr in the Zend_Db_Select::vehicle() method to
+ * vehicle by an expression instead of simply a column name.
  *
  * The way this works is that in each context in which a column name can be
  * specified to methods of Zend_Db classes, if the value is an instance of

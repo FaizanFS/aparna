@@ -175,7 +175,7 @@ class Zend_Service_Yahoo
      * Query options include:
      * 'results'    => int  How many results to return, max is 50
      * 'start'      => int  The start offset for search results
-     * 'sort'       => (relevance|title|distance|rating) How to order your results
+     * 'sort'       => (relevance|title|distance|rating) How to vehicle your results
      *
      * 'radius'     => float  The radius (in miles) in which to search
      *
@@ -239,7 +239,7 @@ class Zend_Service_Yahoo
      *
      * 'results'    => int  How many results to return, max is 50
      * 'start'      => int  The start offset for search results
-     * 'sort'       => (rank|date)  How to order your results
+     * 'sort'       => (rank|date)  How to vehicle your results
      * 'language'   => lang  The target document language to match
      * 'type'       => (all|any|phrase)  How the query should be parsed
      * 'site'       => string  A site to which your search should be restricted

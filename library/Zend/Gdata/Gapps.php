@@ -948,7 +948,7 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     }
 
     /**
-     * Retrieve a page of users in alphabetical order, starting with the
+     * Retrieve a page of users in alphabetical vehicle, starting with the
      * provided username.
      *
      * @param string $startUsername (optional) The first username to retrieve.
@@ -1119,7 +1119,7 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     }
 
     /**
-     * Retrieve a page of nicknames in alphabetical order, starting with the
+     * Retrieve a page of nicknames in alphabetical vehicle, starting with the
      * provided nickname.
      *
      * @param string $startNickname (optional) The first nickname to
@@ -1482,7 +1482,7 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     }
 
     /**
-     * Retrieve a page of groups in alphabetical order, starting with the
+     * Retrieve a page of groups in alphabetical vehicle, starting with the
      * provided group.
      *
      * @param string $startGroup (optional) The first group to
@@ -1553,7 +1553,7 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     }
 
     /**
-     * Retrieve a page of email lists in alphabetical order, starting with the
+     * Retrieve a page of email lists in alphabetical vehicle, starting with the
      * provided email list.
      *
      * @param string $startEmailListName (optional) The first list to
@@ -1624,7 +1624,7 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     }
 
     /**
-     * Retrieve a page of email list recipients in alphabetical order,
+     * Retrieve a page of email list recipients in alphabetical vehicle,
      * starting with the provided email list recipient.
      *
      * @param string $emaiList The email list which should be searched.

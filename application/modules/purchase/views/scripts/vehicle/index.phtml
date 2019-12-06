@@ -1,0 +1,60 @@
+<form action="<?php echo $this->form->getAttrib('action') ?>"
+      method="<?php echo $this->form->getAttrib('method') ?>"
+      enctype="application/x-www-form-urlencoded">
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('category')->getLabel() ?>
+
+        </div>
+        <select name="category" class="float:right form-control col-md-6">
+            <?php foreach ($this->form->category->getMultiOptions() as $key => $value): ?>
+                <option value="<?php echo $key ?>"><?php echo $value ?></option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('ownerName')->getLabel() ?>
+        </div>
+        <?php echo $this->form->getElement('ownerName'); ?>
+    </div>
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('yearOfManufacture')->getLabel() ?>
+
+        </div>
+        <select name="yearOfManufacture" class="float:right form-control col-md-6">
+            <?php foreach ($this->form->yearOfManufacture->getMultiOptions() as $key => $value): ?>
+                <option value="<?php echo $key ?>"><?php echo $value ?></option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('sideDriven')->getLabel() ?>
+        </div>
+        <div class="float:right col-md-6">
+            <?php foreach ($this->form->sideDriven->getMultiOptions() as $key => $value): ?>
+                <input type="radio" value="<?php echo $key ?>" name="sideDriven"><?php echo $value ?><br>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('conditionDescription')->getLabel() ?>
+        </div>
+        <?php echo $this->form->getElement('conditionDescription'); ?>
+    </div>
+    <div class="row form-group">
+        <div class="float:left col-md-6">
+            <?php echo $this->form->getElement('features')->getLabel() ?>
+        </div>
+        <div class="float:right col-md-6">
+            <?php foreach ($this->form->features->getMultiOptions() as $key => $value): ?>
+                <input type="checkbox" value="<?php echo $key ?>" name="features[]"><?php echo $value ?><br>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <?php echo $this->form->getElement('csrf'); ?>
+    <?php echo $this->form->getElement('add'); ?>
+</form>

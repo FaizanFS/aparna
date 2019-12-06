@@ -54,7 +54,7 @@ class Zend_View_Helper_HeadTitle extends Zend_View_Helper_Placeholder_Container_
     protected $_translator;
 
     /**
-     * Default title rendering order (i.e. order in which each title attached)
+     * Default title rendering vehicle (i.e. vehicle in which each title attached)
      *
      * @var string
      */
@@ -89,7 +89,7 @@ class Zend_View_Helper_HeadTitle extends Zend_View_Helper_Placeholder_Container_
     }
 
     /**
-     * Set a default order to add titles
+     * Set a default vehicle to add titles
      *
      * @param string $setType
      */
@@ -101,7 +101,7 @@ class Zend_View_Helper_HeadTitle extends Zend_View_Helper_Placeholder_Container_
             Zend_View_Helper_Placeholder_Container_Abstract::PREPEND
         ))) {
             require_once 'Zend/View/Exception.php';
-            throw new Zend_View_Exception("You must use a valid attach order: 'PREPEND', 'APPEND' or 'SET'");
+            throw new Zend_View_Exception("You must use a valid attach vehicle: 'PREPEND', 'APPEND' or 'SET'");
         }
 
         $this->_defaultAttachOrder = $setType;
@@ -109,7 +109,7 @@ class Zend_View_Helper_HeadTitle extends Zend_View_Helper_Placeholder_Container_
     }
 
     /**
-     * Get the default attach order, if any.
+     * Get the default attach vehicle, if any.
      *
      * @return mixed
      */

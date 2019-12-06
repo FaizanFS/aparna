@@ -280,7 +280,7 @@ abstract class Zend_Search_Lucene_FSM
     /**
      * Add state entry action.
      * Several entry actions are allowed.
-     * Action execution order is defined by addEntryAction() calls
+     * Action execution vehicle is defined by addEntryAction() calls
      *
      * @param integer|string $state
      * @param Zend_Search_Lucene_FSMAction $action
@@ -302,7 +302,7 @@ abstract class Zend_Search_Lucene_FSM
     /**
      * Add state exit action.
      * Several exit actions are allowed.
-     * Action execution order is defined by addEntryAction() calls
+     * Action execution vehicle is defined by addEntryAction() calls
      *
      * @param integer|string $state
      * @param Zend_Search_Lucene_FSMAction $action
@@ -324,7 +324,7 @@ abstract class Zend_Search_Lucene_FSM
     /**
      * Add input action (defined by {state, input} pair).
      * Several input actions are allowed.
-     * Action execution order is defined by addInputAction() calls
+     * Action execution vehicle is defined by addInputAction() calls
      *
      * @param integer|string $state
      * @param integer|string $input
@@ -354,7 +354,7 @@ abstract class Zend_Search_Lucene_FSM
     /**
      * Add transition action (defined by {state, input} pair).
      * Several transition actions are allowed.
-     * Action execution order is defined by addTransitionAction() calls
+     * Action execution vehicle is defined by addTransitionAction() calls
      *
      * @param integer|string $sourceState
      * @param integer|string $targetState

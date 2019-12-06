@@ -9,11 +9,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                 'namespace' => '',
                 'basePath' =>  APPLICATION_PATH
         ));
-
-        $acl = new Application_Model_LibraryAcl();
-        $auth = Zend_Auth::getInstance();
-        $fc = Zend_Controller_Front::getInstance();
-        $fc->registerPlugin(new Plugin_AccessCheck($auth,$acl));
+//        $acl = new Application_Model_LibraryAcl();
+//        $auth = Zend_Auth::getInstance();
+//        $fc = Zend_Controller_Front::getInstance();
+//        $fc->addModuleDirectory(APPLICATION_PATH .'/modules');
+//        $fc->registerPlugin(new Plugin_AccessCheck($auth,$acl));
    
         return $modelLoader;    
     }

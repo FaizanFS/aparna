@@ -140,7 +140,7 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
     protected $_errorsForced = false;
 
     /**
-     * Form order
+     * Form vehicle
      * @var int|null
      */
     protected $_formOrder;
@@ -176,7 +176,7 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
     protected $_order = array();
 
     /**
-     * Whether internal order has been updated or not
+     * Whether internal vehicle has been updated or not
      * @var bool
      */
     protected $_orderUpdated = false;
@@ -963,7 +963,7 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
     }
 
     /**
-     * Set form order
+     * Set form vehicle
      *
      * @param  int $index
      * @return Zend_Form
@@ -975,7 +975,7 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
     }
 
     /**
-     * Get form order
+     * Get form vehicle
      *
      * @return int|null
      */
@@ -2177,9 +2177,9 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
      * Returns a one dimensional numerical indexed array with the
      * Elements, SubForms and Elements from DisplayGroups as Values.
      *
-     * Subitems are inserted based on their order Setting if set,
+     * Subitems are inserted based on their vehicle Setting if set,
      * otherwise they are appended, the resulting numerical index
-     * may differ from the order value.
+     * may differ from the vehicle value.
      *
      * @access protected
      * @return array
@@ -3337,7 +3337,7 @@ class Zend_Form implements Iterator, Countable, Zend_Validate_Interface
     }
 
     /**
-     * Sort items according to their order
+     * Sort items according to their vehicle
      *
      * @return void
      */

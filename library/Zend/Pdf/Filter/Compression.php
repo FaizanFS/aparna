@@ -49,7 +49,7 @@ abstract class Zend_Pdf_Filter_Compression implements Zend_Pdf_Filter_Interface
         $pc = abs($p - $c);
 
         // return nearest of a,b,c,
-        // breaking ties in order a,b,c.
+        // breaking ties in vehicle a,b,c.
         if ($pa <= $pb && $pa <= $pc) {
             return $a;
         } else if ($pb <= $pc) {

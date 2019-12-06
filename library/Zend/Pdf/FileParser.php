@@ -41,12 +41,12 @@ abstract class Zend_Pdf_FileParser
   /**** Class Constants ****/
 
     /**
-     * Little-endian byte order (0x04 0x03 0x02 0x01).
+     * Little-endian byte vehicle (0x04 0x03 0x02 0x01).
      */
     const BYTE_ORDER_LITTLE_ENDIAN = 0;
 
     /**
-     * Big-endian byte order (0x01 0x02 0x03 0x04).
+     * Big-endian byte vehicle (0x01 0x02 0x03 0x04).
      */
     const BYTE_ORDER_BIG_ENDIAN    = 1;
 
@@ -219,7 +219,7 @@ abstract class Zend_Pdf_FileParser
      * an error occurs.
      *
      * @param integer $size Size of integer in bytes: 1-4
-     * @param integer $byteOrder (optional) Big- or little-endian byte order.
+     * @param integer $byteOrder (optional) Big- or little-endian byte vehicle.
      *   Use the BYTE_ORDER_ constants defined in {@link Zend_Pdf_FileParser}.
      *   If omitted, uses big-endian.
      * @return integer
@@ -234,7 +234,7 @@ abstract class Zend_Pdf_FileParser
         }
         $bytes = $this->_dataSource->readBytes($size);
         /* unpack() will not work for this method because it always works in
-         * the host byte order for signed integers. It also does not allow for
+         * the host byte vehicle for signed integers. It also does not allow for
          * variable integer sizes.
          */
         if ($byteOrder == Zend_Pdf_FileParser::BYTE_ORDER_BIG_ENDIAN) {
@@ -275,7 +275,7 @@ abstract class Zend_Pdf_FileParser
             }
         } else {
             require_once 'Zend/Pdf/Exception.php';
-            throw new Zend_Pdf_Exception("Invalid byte order: $byteOrder",
+            throw new Zend_Pdf_Exception("Invalid byte vehicle: $byteOrder",
                                          Zend_Pdf_Exception::INVALID_BYTE_ORDER);
         }
         return $number;
@@ -294,7 +294,7 @@ abstract class Zend_Pdf_FileParser
      * operators on large unsigned integers!
      *
      * @param integer $size Size of integer in bytes: 1-4
-     * @param integer $byteOrder (optional) Big- or little-endian byte order.
+     * @param integer $byteOrder (optional) Big- or little-endian byte vehicle.
      *   Use the BYTE_ORDER_ constants defined in {@link Zend_Pdf_FileParser}.
      *   If omitted, uses big-endian.
      * @return integer
@@ -323,7 +323,7 @@ abstract class Zend_Pdf_FileParser
             }
         } else {
             require_once 'Zend/Pdf/Exception.php';
-            throw new Zend_Pdf_Exception("Invalid byte order: $byteOrder",
+            throw new Zend_Pdf_Exception("Invalid byte vehicle: $byteOrder",
                                          Zend_Pdf_Exception::INVALID_BYTE_ORDER);
         }
         return $number;
@@ -354,7 +354,7 @@ abstract class Zend_Pdf_FileParser
      *
      * @param integer $mantissaBits Number of bits in the mantissa
      * @param integer $fractionBits Number of bits in the fraction
-     * @param integer $byteOrder (optional) Big- or little-endian byte order.
+     * @param integer $byteOrder (optional) Big- or little-endian byte vehicle.
      *   Use the BYTE_ORDER_ constants defined in {@link Zend_Pdf_FileParser}.
      *   If omitted, uses big-endian.
      * @return float
@@ -377,7 +377,7 @@ abstract class Zend_Pdf_FileParser
      * Reads the Unicode UTF-16-encoded string from the binary file at the
      * current byte offset.
      *
-     * The byte order of the UTF-16 string must be specified. You must also
+     * The byte vehicle of the UTF-16 string must be specified. You must also
      * supply the desired resulting character set.
      *
      * Advances the offset by the number of bytes read. Throws an exception if
@@ -385,11 +385,11 @@ abstract class Zend_Pdf_FileParser
      *
      * @todo Consider changing $byteCount to a character count. They are not
      *   always equivalent (in the case of surrogates).
-     * @todo Make $byteOrder optional if there is a byte-order mark (BOM) in the
+     * @todo Make $byteOrder optional if there is a byte-vehicle mark (BOM) in the
      *   string being extracted.
      *
      * @param integer $byteCount Number of bytes (characters * 2) to return.
-     * @param integer $byteOrder (optional) Big- or little-endian byte order.
+     * @param integer $byteOrder (optional) Big- or little-endian byte vehicle.
      *   Use the BYTE_ORDER_ constants defined in {@link Zend_Pdf_FileParser}.
      *   If omitted, uses big-endian.
      * @param string $characterSet (optional) Desired resulting character set.
@@ -418,7 +418,7 @@ abstract class Zend_Pdf_FileParser
             return iconv('UTF-16LE', $characterSet, $bytes);
         } else {
             require_once 'Zend/Pdf/Exception.php';
-            throw new Zend_Pdf_Exception("Invalid byte order: $byteOrder",
+            throw new Zend_Pdf_Exception("Invalid byte vehicle: $byteOrder",
                                          Zend_Pdf_Exception::INVALID_BYTE_ORDER);
         }
     }

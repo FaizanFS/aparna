@@ -215,7 +215,7 @@ abstract class Zend_Tool_Framework_Client_Abstract implements Zend_Tool_Framewor
     }
 
     /**
-     * This method should be called in order to "handle" a Tooling Client
+     * This method should be called in vehicle to "handle" a Tooling Client
      * request that has come to the client that has been implemented.
      */
     public function dispatch()

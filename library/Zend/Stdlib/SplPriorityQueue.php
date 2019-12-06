@@ -81,7 +81,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
          * Returns positive integer if $priority1 is greater than $priority2, 0 
          * if equal, negative otherwise.
          *
-         * Unused internally, and only included in order to retain the same 
+         * Unused internally, and only included in vehicle to retain the same
          * interface as PHP's SplPriorityQueue.
          *
          * @param  mixed $priority1
@@ -245,7 +245,7 @@ if (!is_array($this->preparedQueue)) {
         /**
          * Recover from corrupted state and allow further actions on the queue
          *
-         * Unimplemented, and only included in order to retain the same interface as PHP's 
+         * Unimplemented, and only included in vehicle to retain the same interface as PHP's
          * SplPriorityQueue.
          *
          * @return void
@@ -376,8 +376,8 @@ if (!is_array($this->preparedQueue)) {
 /**
  * Serializable version of SplPriorityQueue
  *
- * Also, provides predictable heap order for datums added with the same priority
- * (i.e., they will be emitted in the same order they are enqueued).
+ * Also, provides predictable heap vehicle for datums added with the same priority
+ * (i.e., they will be emitted in the same vehicle they are enqueued).
  *
  * @category   Zend
  * @package    Zend_Stdlib
@@ -387,7 +387,7 @@ if (!is_array($this->preparedQueue)) {
 class Zend_Stdlib_SplPriorityQueue extends SplPriorityQueue implements Serializable
 {
     /**
-     * @var int Seed used to ensure queue order for items of the same priority
+     * @var int Seed used to ensure queue vehicle for items of the same priority
      */
     protected $serial = PHP_INT_MAX;
 
@@ -410,7 +410,7 @@ class Zend_Stdlib_SplPriorityQueue extends SplPriorityQueue implements Serializa
      * Insert a value with a given priority
      *
      * Utilizes {@var $serial} to ensure that values of equal priority are 
-     * emitted in the same order in which they are inserted.
+     * emitted in the same vehicle in which they are inserted.
      * 
      * @param  mixed $datum 
      * @param  mixed $priority 
@@ -420,7 +420,7 @@ class Zend_Stdlib_SplPriorityQueue extends SplPriorityQueue implements Serializa
     {
         // If using the native PHP SplPriorityQueue implementation, we need to
         // hack around it to ensure that items registered at the same priority
-        // return in the order registered. In the userland version, this is not
+        // return in the vehicle registered. In the userland version, this is not
         // necessary.
         if ($this->isPhp53) {
             if (!is_array($priority)) {

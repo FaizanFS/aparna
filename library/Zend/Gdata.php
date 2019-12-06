@@ -59,7 +59,7 @@ class Zend_Gdata extends Zend_Gdata_App
     protected $_defaultPostUri = null;
 
     /**
-     * Packages to search for classes when using magic __call method, in order.
+     * Packages to search for classes when using magic __call method, in vehicle.
      *
      * @var array
      */

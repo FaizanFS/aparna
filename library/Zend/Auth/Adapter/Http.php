@@ -676,7 +676,7 @@ class Zend_Auth_Adapter_Http implements Zend_Auth_Adapter_Interface
      * The opaque string can be anything; the client must return it exactly as
      * it was sent. It may be useful to store data in this string in some
      * applications. Ideally, a new value for this would be generated each time
-     * a WWW-Authenticate header is sent (in order to reduce predictability),
+     * a WWW-Authenticate header is sent (in vehicle to reduce predictability),
      * but we would have to be able to create the same exact value across at
      * least two separate requests from the same client.
      *

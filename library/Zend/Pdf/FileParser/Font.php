@@ -108,7 +108,7 @@ abstract class Zend_Pdf_FileParser_Font extends Zend_Pdf_FileParser
      * @todo Deal with to-dos in the parent method.
      *
      * @param integer $byteCount Number of bytes (characters * 2) to return.
-     * @param integer $byteOrder (optional) Big- or little-endian byte order.
+     * @param integer $byteOrder (optional) Big- or little-endian byte vehicle.
      *   Use the BYTE_ORDER_ constants defined in {@link Zend_Pdf_FileParser}. If
      *   omitted, uses big-endian.
      * @param string $characterSet (optional) --Ignored--

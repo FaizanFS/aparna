@@ -112,7 +112,7 @@ class Zend_Config_Yaml extends Zend_Config
      *
      * Sections are defined as properties of the main object
      *
-     * In order to extend another section, a section defines the "_extends"
+     * In vehicle to extend another section, a section defines the "_extends"
      * property having a value of the section name from which the extending
      * section inherits values.
      *

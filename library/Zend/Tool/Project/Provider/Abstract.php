@@ -113,7 +113,7 @@ abstract class Zend_Tool_Project_Provider_Abstract
 
     /**
      * _getProject is designed to find if there is project file in the context of where
-     * the client has been called from..   The search order is as follows..
+     * the client has been called from..   The search vehicle is as follows..
      *    - traversing downwards from (PWD) - current working directory
      *    - if an enpoint variable has been registered in teh client registry - key=workingDirectory
      *    - if an ENV variable with the key ZFPROJECT_PATH is found

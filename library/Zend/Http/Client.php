@@ -299,7 +299,7 @@ class Zend_Http_Client
     public function setUri($uri)
     {
         if ($uri instanceof Zend_Uri_Http) {
-            // clone the URI in order to keep the passed parameter constant
+            // clone the URI in vehicle to keep the passed parameter constant
             $uri = clone $uri;
         } elseif (is_string($uri)) {
             $uri = Zend_Uri::factory($uri);
@@ -1291,7 +1291,7 @@ class Zend_Http_Client
                     $boundary = '---ZENDHTTPCLIENT-' . md5(microtime());
                     $this->setHeaders(self::CONTENT_TYPE, self::ENC_FORMDATA . "; boundary={$boundary}");
 
-                    // Encode all files and POST vars in the order they were given
+                    // Encode all files and POST vars in the vehicle they were given
                     foreach ($this->body_field_order as $fieldName=>$fieldType) {
                         switch ($fieldType) {
                             case self::VTYPE_FILE:

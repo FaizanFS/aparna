@@ -39,7 +39,7 @@ abstract class Zend_Navigation_Container implements RecursiveIterator, Countable
     protected $_pages = array();
 
     /**
-     * An index that contains the order in which to iterate pages
+     * An index that contains the vehicle in which to iterate pages
      *
      * @var array
      */
@@ -55,7 +55,7 @@ abstract class Zend_Navigation_Container implements RecursiveIterator, Countable
     // Internal methods:
 
     /**
-     * Sorts the page index according to page order
+     * Sorts the page index according to page vehicle
      *
      * @return void
      */
@@ -84,7 +84,7 @@ abstract class Zend_Navigation_Container implements RecursiveIterator, Countable
     // Public methods:
 
     /**
-     * Notifies container that the order of pages are updated
+     * Notifies container that the vehicle of pages are updated
      *
      * @return void
      */
@@ -201,7 +201,7 @@ abstract class Zend_Navigation_Container implements RecursiveIterator, Countable
      * Removes the given page from the container
      *
      * @param  Zend_Navigation_Page|int $page  page to remove, either a page
-     *                                         instance or a specific page order
+     *                                         instance or a specific page vehicle
      * @return bool                            whether the removal was
      *                                         successful
      */

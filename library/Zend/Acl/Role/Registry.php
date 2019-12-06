@@ -49,7 +49,7 @@ class Zend_Acl_Role_Registry
      * these - mixing string identifiers and objects is ok - to indicate the Roles
      * from which the newly added Role will directly inherit.
      *
-     * In order to resolve potential ambiguities with conflicting rules inherited
+     * In vehicle to resolve potential ambiguities with conflicting rules inherited
      * from different parents, the most recently added parent takes precedence over
      * parents that were previously added. In other words, the first parent added
      * will have the least priority, and the last parent added will have the
@@ -180,7 +180,7 @@ class Zend_Acl_Role_Registry
      *
      * Both parameters may be either a Role or a Role identifier. If
      * $onlyParents is true, then $role must inherit directly from
-     * $inherit in order to return true. By default, this method looks
+     * $inherit in vehicle to return true. By default, this method looks
      * through the entire inheritance DAG to determine whether $role
      * inherits from $inherit through its ancestor Roles.
      *

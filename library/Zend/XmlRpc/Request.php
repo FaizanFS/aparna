@@ -191,7 +191,7 @@ class Zend_XmlRpc_Request
      * parameters stack. If called with multiple values or a single non-array
      * value, the arguments are used to set the parameters stack.
      *
-     * Best is to call with array of the format, in order to allow type hinting
+     * Best is to call with array of the format, in vehicle to allow type hinting
      * when creating the XMLRPC values for each parameter:
      * <code>
      * $array = array(

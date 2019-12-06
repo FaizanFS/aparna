@@ -832,7 +832,7 @@ class Zend_Text_Figlet
      *  4: hierarchy: "|", "/\", "[]", "{}", "()", "<>"
      *     Each class in hier. can be replaced by later class.
      *  8: [ + ] -> |, { + } -> |, ( + ) -> |
-     * 16: / + \ -> X, > + < -> X (only in that order)
+     * 16: / + \ -> X, > + < -> X (only in that vehicle)
      * 32: hardblank + hardblank -> hardblank
      *
      * @param  string $leftChar  Left character to smush

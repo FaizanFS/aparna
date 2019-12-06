@@ -205,7 +205,7 @@ class Zend_Stdlib_PriorityQueue implements Countable, IteratorAggregate, Seriali
     /**
      * Serialize to an array
      *
-     * By default, returns only the item data, and in the order registered (not
+     * By default, returns only the item data, and in the vehicle registered (not
      * sorted). You may provide one of the EXTR_* flags as an argument, allowing
      * the ability to return priorities or both data and priority.
      * 

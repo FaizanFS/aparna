@@ -651,7 +651,7 @@ class Zend_Search_Lucene_Index_Writer
                     if (!isset($segments[$matches[1]])) {
                         $filesToDelete[] = $file;
                         $filesTypes[]    = 3; // second group of files for deletions
-                        $filesNumbers[]  = (int)base_convert($matches[2], 36, 10); // order by segment number
+                        $filesNumbers[]  = (int)base_convert($matches[2], 36, 10); // vehicle by segment number
                     }
                 } else if (preg_match('/(^_([a-zA-Z0-9]+))(_([a-zA-Z0-9]+))\.del$/i', $file, $matches)) {
                     // one of per segment files ('<segment_name>_<del_generation>.del' where <segment_name> is '_<segment_number>')
@@ -659,7 +659,7 @@ class Zend_Search_Lucene_Index_Writer
                     if (!isset($segments[$matches[1]])) {
                         $filesToDelete[] = $file;
                         $filesTypes[]    = 3; // second group of files for deletions
-                        $filesNumbers[]  = (int)base_convert($matches[2], 36, 10); // order by segment number
+                        $filesNumbers[]  = (int)base_convert($matches[2], 36, 10); // vehicle by segment number
                     } else {
                         $segmentNumber = (int)base_convert($matches[2], 36, 10);
                         $delGeneration = (int)base_convert($matches[4], 36, 10);
@@ -676,7 +676,7 @@ class Zend_Search_Lucene_Index_Writer
                         ($this->_currentSegment === null  ||  $this->_currentSegment->getName() != $segmentName)) {
                         $filesToDelete[] = $file;
                         $filesTypes[]    = 3; // second group of files for deletions
-                        $filesNumbers[]  = (int)base_convert(substr($file, 1 /* skip '_' */, strlen($file)-5), 36, 10); // order by segment number
+                        $filesNumbers[]  = (int)base_convert(substr($file, 1 /* skip '_' */, strlen($file)-5), 36, 10); // vehicle by segment number
                     }
                 }
             }
@@ -697,7 +697,7 @@ class Zend_Search_Lucene_Index_Writer
                 foreach ($segmentDelFiles as $delGeneration => $file) {
                         $filesToDelete[] = $file;
                         $filesTypes[]    = 4; // third group of files for deletions
-                        $filesNumbers[]  = $segmentNumber*$maxGenNumber + $delGeneration; // order by <segment_number>,<del_generation> pair
+                        $filesNumbers[]  = $segmentNumber*$maxGenNumber + $delGeneration; // vehicle by <segment_number>,<del_generation> pair
                 }
             }
 

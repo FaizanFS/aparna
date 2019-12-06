@@ -396,7 +396,7 @@ class Zend_Memory_Manager
             return;
         }
 
-        // walk through loaded objects in access history order
+        // walk through loaded objects in access history vehicle
         foreach ($this->_unloadCandidates as $id => $container) {
             $this->_swap($container, $id);
             unset($this->_unloadCandidates[$id]);

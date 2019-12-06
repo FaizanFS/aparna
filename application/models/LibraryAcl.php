@@ -7,6 +7,9 @@ class Application_Model_LibraryAcl extends Zend_Acl
         $this->add(new Zend_Acl_Resource('login'),'authentication');
         $this->add(new Zend_Acl_Resource('logout'),'authentication');
 
+        $this->add(new Zend_Acl_Resource('guestbook'));
+        $this->add(new Zend_Acl_Resource('sign'),'guestbook');
+        $this->add(new Zend_Acl_Resource('index'),'guestbook');
 
         $this->add(new Zend_Acl_Resource('book'));
         $this->add(new Zend_Acl_Resource('list'),'book');
@@ -18,7 +21,7 @@ class Application_Model_LibraryAcl extends Zend_Acl
         $this->addRole(new Zend_Acl_Role('admin'),'user');
         
         $this->allow('user',array('list','authentication'));
-        $this->allow('admin',array('book'));
+        $this->allow('admin',array('book','guestbook'));
 
     }
 }

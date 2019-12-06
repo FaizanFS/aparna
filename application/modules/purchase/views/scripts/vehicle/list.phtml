@@ -1,0 +1,45 @@
+<br/><br/>
+<div id="view-content" class="container">
+    <a href="<?php echo $this->baseUrl(); ?>/purchase/vehicle/index">
+        <button class="btn btn-success float-right form-group">Purchase Vehicle</button>
+    </a>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Purchase Id</th>
+                <th>Category</th>
+                <th>Year of Manufacture</th>
+                <th>Drive Side</th>
+                <th>Vehicle Condition Description</th>
+                <th>Features</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($this->vehicles as $value) : ?>
+                <tr>
+                    <td><?= $value->id ?></td>
+                    <td><?= $value->category ?></td>
+                    <td><?= $value->yearOfManufacture ?></td>
+                    <td><?= $value->sideDriven ?></td>
+                    <td><?= $value->conditionDescription ?></td>
+                    <td><?= $value->features ?></td>
+                    <td>
+                        <?php echo(1 === $value->status ? '<button class="btn btn-success form-control">Available</button>' : '<button class="btn btn-warning form-control">Sold Out</button>') ?>
+                    </td>
+                    <td>
+                        <a href="<?php echo $this->baseUrl(); ?>/order/vehicle/index?id=<?= $value->id ?>">
+                            <?php if ($value->status == 1) {
+                                echo '<button class="btn btn-sm btn-primary form-control">Order</button>';
+                            } ?>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
+</div>

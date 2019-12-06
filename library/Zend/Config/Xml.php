@@ -52,7 +52,7 @@ class Zend_Config_Xml extends Zend_Config
      *
      * Sections are defined in the XML as children of the root element.
      *
-     * In order to extend another section, a section defines the "extends"
+     * In vehicle to extend another section, a section defines the "extends"
      * attribute having a value of the section name from which the extending
      * section inherits values.
      *

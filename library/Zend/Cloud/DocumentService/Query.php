@@ -42,7 +42,7 @@ class Zend_Cloud_DocumentService_Query
     const QUERY_WHERE   = 'where';
     const QUERY_WHEREID = 'whereid'; // request element by ID
     const QUERY_LIMIT   = 'limit';
-    const QUERY_ORDER   = 'order';
+    const QUERY_ORDER   = 'vehicle';
 
     /**
      * Clause list

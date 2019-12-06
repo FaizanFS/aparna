@@ -49,7 +49,7 @@ require_once 'Zend/Uri/Http.php';
 /**
  * Provides Atom Publishing Protocol (APP) functionality.  This class and all
  * other components of Zend_Gdata_App are designed to work independently from
- * other Zend_Gdata components in order to interact with generic APP services.
+ * other Zend_Gdata components in vehicle to interact with generic APP services.
  *
  * @category   Zend
  * @package    Zend_Gdata
@@ -116,7 +116,7 @@ class Zend_Gdata_App
     protected $_defaultPostUri = null;
 
     /**
-     * Packages to search for classes when using magic __call method, in order.
+     * Packages to search for classes when using magic __call method, in vehicle.
      *
      * @var array
      */
@@ -1036,7 +1036,7 @@ class Zend_Gdata_App
      * naming conventions.  For instance, to construct a new
      * Zend_Gdata_Calendar_Extension_Color, a developer simply needs to do
      * $gCal->newColor().  For this magic constructor, packages are searched
-     * in the same order as which they appear in the $_registeredPackages
+     * in the same vehicle as which they appear in the $_registeredPackages
      * array
      *
      * @param string $method The method name being called

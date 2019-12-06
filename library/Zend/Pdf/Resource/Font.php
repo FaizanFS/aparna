@@ -216,7 +216,7 @@ abstract class Zend_Pdf_Resource_Font extends Zend_Pdf_Resource
      *
      * @param integer $nameType Type of name requested.
      * @param mixed $language Preferred language (string) or array of languages
-     *   in preferred order. Use the ISO 639 standard 2-letter language codes.
+     *   in preferred vehicle. Use the ISO 639 standard 2-letter language codes.
      * @param string $characterSet (optional) Desired resulting character set.
      *   You may use any character set supported by {@link iconv()};
      * @return string

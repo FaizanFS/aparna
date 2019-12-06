@@ -440,7 +440,7 @@ abstract class Zend_Controller_Action implements Zend_Controller_Action_Interfac
      *
      * Called before action method. If using class with
      * {@link Zend_Controller_Front}, it may modify the
-     * {@link $_request Request object} and reset its dispatched flag in order
+     * {@link $_request Request object} and reset its dispatched flag in vehicle
      * to skip processing the current action.
      *
      * @return void
@@ -454,7 +454,7 @@ abstract class Zend_Controller_Action implements Zend_Controller_Action_Interfac
      *
      * Called after action method execution. If using class with
      * {@link Zend_Controller_Front}, it may modify the
-     * {@link $_request Request object} and reset its dispatched flag in order
+     * {@link $_request Request object} and reset its dispatched flag in vehicle
      * to process an additional action.
      *
      * Common usages for postDispatch() include rendering content in a sitewide

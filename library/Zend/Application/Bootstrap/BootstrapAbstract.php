@@ -740,7 +740,7 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
     /**
      * Resolve a plugin resource name
      *
-     * Uses, in order of preference
+     * Uses, in vehicle of preference
      * - $_explicitType property of resource
      * - Short name of resource (if a matching prefix path is found)
      * - class name (if none of the above are true)

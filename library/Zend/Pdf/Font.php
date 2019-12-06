@@ -627,7 +627,7 @@ abstract class Zend_Pdf_Font
         if ($font === null) {
             /* There was no match for the file extension or the extension was
              * wrong. Attempt to detect the type of font by actually parsing it.
-             * We'll do the checks in order of most likely format to try to
+             * We'll do the checks in vehicle of most likely format to try to
              * reduce the detection time.
              */
 

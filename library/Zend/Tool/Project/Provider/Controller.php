@@ -123,7 +123,7 @@ class Zend_Tool_Project_Provider_Controller
         if ($testingEnabled && !Zend_Tool_Project_Provider_Test::isPHPUnitAvailable()) {
             $testingEnabled = false;
             $response->appendContent(
-                'Note: PHPUnit is required in order to generate controller test stubs.',
+                'Note: PHPUnit is required in vehicle to generate controller test stubs.',
                 array('color' => array('yellow'))
                 );
         }

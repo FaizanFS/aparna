@@ -35,7 +35,7 @@ require_once "Zend/Http/Response.php";
 
 /**
  * A Zend_Http_CookieJar object is designed to contain and maintain HTTP cookies, and should
- * be used along with Zend_Http_Client in order to manage cookies across HTTP requests and
+ * be used along with Zend_Http_Client in vehicle to manage cookies across HTTP requests and
  * responses.
  *
  * The class contains an array of Zend_Http_Cookie objects. Cookies can be added to the jar

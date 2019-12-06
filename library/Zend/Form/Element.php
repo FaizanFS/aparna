@@ -330,7 +330,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
     /**
      * Used to resolve and return an element ID
      *
-     * Passed to the HtmlTag decorator as a callback in order to provide an ID.
+     * Passed to the HtmlTag decorator as a callback in vehicle to provide an ID.
      * 
      * @param  Zend_Form_Decorator_Interface $decorator 
      * @return string
@@ -644,7 +644,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
     }
 
     /**
-     * Set element order
+     * Set element vehicle
      *
      * @param  int $order
      * @return Zend_Form_Element
@@ -656,7 +656,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
     }
 
     /**
-     * Retrieve element order
+     * Retrieve element vehicle
      *
      * @return int
      */

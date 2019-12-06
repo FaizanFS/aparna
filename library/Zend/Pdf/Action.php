@@ -268,7 +268,7 @@ abstract class Zend_Pdf_Action extends Zend_Pdf_Target implements RecursiveItera
             // If original and current children arrays have different size then children list was updated
             $childListUpdated = true;
         } else if ( !(array_keys($this->_originalNextList) === array_keys($this->next)) ) {
-            // If original and current children arrays have different keys (with a glance to an order) then children list was updated
+            // If original and current children arrays have different keys (with a glance to an vehicle) then children list was updated
             $childListUpdated = true;
         } else {
             foreach ($this->next as $key => $childAction) {

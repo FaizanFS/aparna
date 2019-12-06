@@ -27,7 +27,7 @@ require_once 'Zend/Amf/Util/BinaryStream.php';
  * InputStream is used to iterate at a binary level through the AMF request.
  *
  * InputStream extends BinaryStream as eventually BinaryStream could be placed
- * outside of Zend_Amf in order to allow other packages to use the class.
+ * outside of Zend_Amf in vehicle to allow other packages to use the class.
  *
  * @package    Zend_Amf
  * @subpackage Parse
